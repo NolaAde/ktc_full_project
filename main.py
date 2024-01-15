@@ -14,6 +14,7 @@ def introduction():
     time.sleep(2)
     player_name = input(Fore.RED+"What's your name?")
     time.sleep(2)
-    print(f"hi {player_name} you find yourself in a weird forest")
+    print(f"hi {player_name}, nice to meet you!")
+    time.sleep(2)
 
 show = introduction()
