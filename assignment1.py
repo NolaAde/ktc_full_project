@@ -10,14 +10,14 @@ player_score = 0
 
 def introduction():
     # Welcome the player
-    print(Fore.LIGHTMAGENTA_EX+"Welcome to python adventure")
-    time.sleep(2)
+    print(Fore.LIGHTRED_EX+"Welcome to python adventure")
+    time.sleep(1)
     player_name = input(Fore.RED+"What's your name?")
-    time.sleep(2)
+    time.sleep(1)
     print(f"hi {player_name}, nice to meet you!")
-    time.sleep(2)
+    time.sleep(1)
     favourite_animal = input("What's your favourite animal? ")
-    time.sleep(2)
+    time.sleep(1)
     print(f"Awww, {favourite_animal}'s are extremely cute!")
 
 show = introduction()
