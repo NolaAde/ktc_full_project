@@ -18,3 +18,7 @@ def introduction():
     time.sleep(2)
 
 show = introduction()
+
+def make_choice(question, option, score_change):
+    print(question)
+
