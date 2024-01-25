@@ -31,8 +31,8 @@ def make_choice(question, option, score_change):
                     global player_score += score_change[choice - 1]
                 return choice
             else:
-                print("Invalid choice try again")
-        except ValueError:
+            print("Invalid choice try again")
+    except ValueError:
                print("invalid input. Enter a number") 
 
             
