@@ -15,7 +15,7 @@ def introduction():
     time.sleep(2)
     player_name = input(Fore.GREEN + "What's your name?")
     time.sleep(2)
-    print(f"hi {player_name}, nice to meet you!")
+    print(f"hi {player_name}, nice to meet you! I'm Horimi. I am your guide and will help you through the game.")
     time.sleep(2)
 
 def make_choice(question, options, score_change):
@@ -44,12 +44,26 @@ def forest_path():
         print(Fore.LIGHTCYAN_EX + "You encounter a friendly cat and she leads the way to the next challenge")
     else:
         print(Fore.LIGHTBLUE_EX + "Oh no, you encountered a venomous spider and you are trapped in his web")
+time.sleep(1)
+def mountain_climb():
+    print("You continue to were you are headed and reach a steep mountain.")
+    
+    time.sleep(1)
+    choice = make_choice( "what do you do?", ["Use a rope", "Climb without equipment."], [1, -1])
+
+    if choice == 1:
+        print(Fore.CYAN + "Smart. Using a rope makes it easier to climb")
+    else:
+        print(Fore.BLUE + "No, you were supposed to use the rope! You slipped but Horimi saved you, lucky you.")
+
+
 # Main game loop
 def play_game():
     introduction()
 
     # Start of the adventure
     forest_path()
+    mountain_climb()
     
 if __name__ == "__main__":
         play_game()
