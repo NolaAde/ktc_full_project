@@ -15,7 +15,7 @@ def introduction():
     time.sleep(2)
     player_name = input(Fore.GREEN + "What's your name?")
     time.sleep(2)
-    print(f"hi {player_name}, nice to meet you! I'm Horimi. I am your guide and will help you through the game.")
+    print(f"hi {player_name}, nice to meet you! I'm Horimiya. I am your guide and will help you through the game.")
     time.sleep(2)
 
 def make_choice(question, options, score_change):
@@ -46,24 +46,24 @@ def forest_path():
         print(Fore.LIGHTBLUE_EX + "Oh no, you encountered a venomous spider and you are trapped in his web")
 time.sleep(5)
 def mountain_climb():
-    print("You continue to were you are headed and reach a steep mountain.")
+    print(Fore.LIGHTMAGENTA_EX+"You continue to were you are headed and reach a steep mountain.")
     time.sleep(5)
-    choice = make_choice( "what do you do?", ["Use a rope", "Climb without equipment."], [1, -1])
+    choice = make_choice(Fore.LIGHTMAGENTA_EX+"what do you do?", ["Use a rope", "Climb without equipment."], [1, -1])
 
     if choice == 1:
         print(Fore.CYAN + "Smart. Using a rope makes it easier to climb")
     else:
-        print(Fore.BLUE + "No, you were supposed to use the rope! You slipped but Horimi saved you, lucky you.")
+        print(Fore.BLUE + "No, you were supposed to use the rope! You slipped but Horimiya saved you, lucky you.")
 time.sleep(2)
 def mystical_cave():
     print(Fore.LIGHTMAGENTA_EX + "After that adventure, i think you might enjoy resting in a magical cave.")
     time.sleep(5)
-    choice = make_choice(Fore.LIGHTGREEN_EX + "what do you do?", ["Explore the cave", "Just rest and then leave without exploring"], [1, -1])
+    choice = make_choice(Fore.LIGHTGREEN_EX + "what do you do?",["Explore the cave", "Just rest and then leave without exploring"], [1, -1])
     time.sleep(2)
     if choice == 1:
         print(Fore.CYAN + "Wow, you got the power of moving things with your mind")
     else:
-        print(Fore.BLUE + "Horimi said you could have gotten powers. You turn back to face the cave but it disapeared, poor you.")
+        print(Fore.BLUE + "Horimiya said you could have gotten powers. You turn back to face the cave but it disapeared, poor you.")
 # Main game loop
 def play_game():
     introduction()
