@@ -15,7 +15,7 @@ def introduction():
     time.sleep(2)
     player_name = input(Fore.GREEN + "What's your name?")
     time.sleep(2)
-    print(f"hi {player_name}, nice to meet you! I'm Horimiya. I am your guide and will help you through the game.")
+    print(f"hi {player_name}, nice to meet you! I'm Horimiya. I am your guide and will help you through the game.You need to find a treasure and place it in its rightful place in order to leave.")
     time.sleep(2)
 
 def make_choice(question, options, score_change):
@@ -63,7 +63,28 @@ def mystical_cave():
     if choice == 1:
         print(Fore.CYAN + "Wow, you got the power of moving things with your mind")
     else:
-        print(Fore.BLUE + "Horimiya said you could have gotten powers. You turn back to face the cave but it disapeared, poor you.")
+         print(Fore.BLUE + "Horimiya said you could have gotten powers. You turn back to face the cave but it disapeared, poor you.")
+
+def river_crossing():
+    print(Fore.LIGHTMAGENTA_EX + "There is a wide, rushing river blocking your way")
+    time.sleep(5)
+    choice = make_choice(Fore.LIGHTGREEN_EX + "what do you do?",["make a raft", "swim across"], [1, -1])
+    time.sleep(2)
+    if choice == 1:
+        print(Fore.CYAN + "You get there safely")
+    else:
+         print(Fore.BLUE + "You somehow managed to survive with many injuries but Horimiya healed you.")
+
+def hidden_treasure():
+    print(Fore.LIGHTMAGENTA_EX + "Finally, you reach a massive treasure box")
+    time.sleep(5)
+    choice = make_choice(Fore.LIGHTGREEN_EX + "what do you do?",["open it", "Leave it"], [1, -1])
+    time.sleep(2)
+    if choice == 1:
+        print(Fore.CYAN + "You find the treasure and put it were it belongs. Hooray! Now you can leave the game,bye. Horimiya is sad youre leaving but you ")
+    else:
+         print(Fore.BLUE + "Horimiya said the treasure was in there. You turn to get it but some theifs stole it, now you have to wait until the next time someone plays the game. Oh no.")
+
 # Main game loop
 def play_game():
     introduction()
@@ -72,6 +93,7 @@ def play_game():
     forest_path()
     mountain_climb()
     mystical_cave()
-    
+    river_crossing()
+    hidden_treasure()
 if __name__ == "__main__":
         play_game()
