@@ -15,7 +15,7 @@ def introduction():
     time.sleep(2)
     player_name = input(Fore.GREEN + "What's your name?: ")
     time.sleep(2)
-    print(f"hi {player_name}, nice to meet you! I'm Horimiya. I am your guide, do you remember me from the other python game. yea python adventure.")
+    print(f"hi {player_name}, nice to meet you! I'm Noala. I am your guide, do you remember me from the other python game. yea python adventure.")
     time.sleep(2)
 
 def make_choice(question, options, score_change):
@@ -43,7 +43,7 @@ def wake_up():
     if choice == 1:
         print(Fore.LIGHTCYAN_EX + "You still had an extra 2 hours to get ready. Good for you.")
     else:
-        print(Fore.LIGHTBLUE_EX + "Horimiya had to make you sleep for 1 hour because you were acting crazy.")
+        print(Fore.LIGHTBLUE_EX + "Noala had to make you sleep for 1 hour because you were acting crazy.")
 
 def breckky():
     print("You need some brecky. You need something to hold your belly because you are going to barry_island so you will definetly eat there")
@@ -61,7 +61,7 @@ def barry_island():
     if choice == 1:
         print(Fore.CYAN + "The authorities could not do anything because the king was the one who did that.")
     else:
-        print(Fore.BLUE + "Wow, Horimiya had privately booked winter wonder land for you and your friends and family.")
+        print(Fore.BLUE + "Wow, Noala had privately booked winter wonder land for you and your friends and family.")
 time.sleep(2)
 def winter_wonderland():
     print(Fore.LIGHTMAGENTA_EX + "You go to winter wonder land and when you did, you were enjoying yourself and you see a scary ride")
@@ -69,26 +69,17 @@ def winter_wonderland():
     choice = make_choice(Fore.LIGHTGREEN_EX + "what do you do?",["Go on the ride", "dont go on it"], [1, -1])
     time.sleep(2)
     if choice == 1:
-        print(Fore.CYAN + "You remembered you hated scary things so Horimiya had to teleport you out of the ride and makes you forget about the ride.")
+        print(Fore.CYAN + "You remembered you hated scary things so Noala had to teleport you out of the ride and makes you forget about the ride.")
     else:
         print(Fore.BLUE + "Good because you remembered you hated scary stuff.")
 
 def presents():
     print("Its time to open some christmas but there was a catch, you could only open two present.")
-    choice = make_choice("Which pair shall you choose?", ["pair a", "pair b", "pair c", "pair d", "pair e", "pair f"], [1, -1])
+    choice = make_choice("Which pair shall you choose?", ["pair a", "pair b"], [1, -1])
     if choice == 1:
         print("You got all the presents and a bottle of perfume with a nintendo.")
-    elif choice == 2:
-        print("You got sonic figurines and your own house and car")
-    elif choice == 3:
-        print("You got a new house and a new car plus the remainig presents")
-    elif choice == 4:
-        print("You got sonic figurines and the remainig presents")
-    elif choice == 5:
-        print("You got a bottle of perfume, a nintendo, a new house and a new car")
     else:
-        print("You got a bottle of perfume, a nintendo and sonic figurines")
-        time.sleep(2)
+        print("You got sonic figurines and your own house and car")
     print("This is the end of the 'Make Choices On Christmas Day' quiz, and have a merry christmas! Bye.")
 # Main game loop
 def play_game():
