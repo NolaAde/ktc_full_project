@@ -81,10 +81,18 @@ def hidden_treasure():
     choice = make_choice(Fore.LIGHTGREEN_EX + "what do you do?",["open it", "Leave it"], [1, -1])
     time.sleep(2)
     if choice == 1:
-        print(Fore.CYAN + "You find the treasure and put it were it belongs. Hooray! Now you can leave the game,bye. Horimiya is sad youre leaving but you ")
+        print(Fore.CYAN + "The treasere you found was trilions of pounds, you take them home with you happily")
     else:
-         print(Fore.BLUE + "Horimiya said the treasure was in there. You turn to get it but some theifs stole it, now you have to wait until the next time someone plays the game. Oh no.")
+         print(Fore.BLUE + "Horimiya said the treasure was in there. You turn to get it but some theifs stole it.")
 
+def spend_or_save():
+    print("When you get home with your money, you had a little think about something. It was about whether you were going to spend your money, or save it.")
+time.sleep(5)
+choice = make_choice("What are you going to do?", ["Save your money in a bank", "Spend your money"], [1, -1])
+if choice == 1:
+    print("The bank suddenly changed the amount of money you had into quintilions!")
+else:
+    print("You bought wallet's to store your money suddenly two thiefs stole all of your wallets, but the police caught them, lucky you.")
 # Main game loop
 def play_game():
     introduction()
@@ -95,5 +103,6 @@ def play_game():
     mystical_cave()
     river_crossing()
     hidden_treasure()
+    spend_or_save()
 if __name__ == "__main__":
         play_game()
