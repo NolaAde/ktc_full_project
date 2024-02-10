@@ -1,5 +1,6 @@
 # Import dependencies
 # A dependency is a libary or module that our code needs to function
+from random import choice
 import time #to make the code interactive from
 from colorama import Fore, Style, init # color text on the terminal
 
@@ -45,21 +46,18 @@ def wake_up():
         print(Fore.LIGHTBLUE_EX + "Horimiya had to make you sleep for 1 hour because you were acting crazy.")
 
 def breckky():
-    print("You need some brecky.")
-    choice = make_choice("wat u munching," ["Cereal", "Plantain and egg"], [1, -1])
+    print("You need some brecky. You need something to hold your belly because you are going to barry_island so you will definetly eat there")
+    choice = make_choice("wat u munching",["Cereal", "Plantain and egg"], [1, -1])
     
     if choice == 1:
         print("Good you are not full but this is enough to hold your belly and its quick to make.")
-    elif choice == 2:
-        print("its to long. you have 1:30(1 hour 30 minutes)until barry island closes. Oh I forgot to say that your going to barry island")
     else:
-        print("WHY YOU SKIPPING BRECKY?!?!Anyways you fainted, aw now your definetly late.")
+        print("its to long. you have 1:30(1 hour 30 minutes)until barry island closes, now you are gonna be late.")
         time.sleep(2)
 def barry_island():
     print(Fore.LIGHTMAGENTA_EX+"You realised that barry_island was privately booked and you cant enter.")
     time.sleep(2)
     choice = make_choice(Fore.LIGHTMAGENTA_EX+"what do you do?", ["Complain to the authorities", "go to winter wonderland"], [1, -1])
-
     if choice == 1:
         print(Fore.CYAN + "The authorities could not do anything because the king was the one who did that.")
     else:
@@ -75,6 +73,23 @@ def winter_wonderland():
     else:
         print(Fore.BLUE + "Good because you remembered you hated scary stuff.")
 
+def presents():
+    print("Its time to open some christmas but there was a catch, you could only open two present.")
+    choice = make_choice("Which pair shall you choose?", ["pair a", "pair b", "pair c", "pair d", "pair e", "pair f"], [1, -1])
+    if choice == 1:
+        print("You got all the presents and a bottle of perfume with a nintendo.")
+    elif choice == 2:
+        print("You got sonic figurines and your own house and car")
+    elif choice == 3:
+        print("You got a new house and a new car plus the remainig presents")
+    elif choice == 4:
+        print("You got sonic figurines and the remainig presents")
+    elif choice == 5:
+        print("You got a bottle of perfume, a nintendo, a new house and a new car")
+    else:
+        print("You got a bottle of perfume, a nintendo and sonic figurines")
+        time.sleep(2)
+    print("This is the end of the 'Make Choices On Christmas Day' quiz, and have a merry christmas! Bye.")
 # Main game loop
 def play_game():
     introduction()
