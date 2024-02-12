@@ -74,13 +74,13 @@ def winter_wonderland():
         print(Fore.BLUE + "Good because you remembered you hated scary stuff.")
 
 def presents():
-    print("Its time to open some christmas but there was a catch, you could only open two present.")
-    choice = make_choice("Which pair shall you choose?", ["pair a", "pair b"], [1, -1])
+    print(Fore.CYAN + "Its time to open some christmas but there was a catch, you could only open two present.")
+    choice = make_choice(Fore.CYAN + "Which pair shall you choose?", ["pair a", "pair b"], [1, -1])
     if choice == 1:
-        print("You got all the presents and a bottle of perfume with a nintendo.")
+        print(Fore.CYAN + "You got all the presents and a bottle of perfume with a nintendo.")
     else:
-        print("You got sonic figurines and your own house and car")
-    print("This is the end of the 'Make Choices On Christmas Day' quiz, and have a merry christmas! Bye.")
+        print(Fore.CYAN + "You got sonic figurines and your own house and car")
+    print(Fore.CYAN + "This is the end of the 'Make Choices On Christmas Day' quiz, and have a merry christmas! Bye.")
 # Main game loop
 def play_game():
     introduction()
