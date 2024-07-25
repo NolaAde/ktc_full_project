@@ -5,8 +5,8 @@ for i in my_list:
 
 names = ["Kelly","Michelle","Beyonce"]
 
-for n in names:
-    print(n + ",can you handle this?")
+for names in names:
+    print(names + ",can you handle this?")
 
 print("I dont think they can handle this!")
 

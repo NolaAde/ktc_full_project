@@ -83,8 +83,8 @@ def presents():
     print(Fore.CYAN + "Well, christmas is over...........buuuuuuuut you remembered your bestie's birthday party is in 10 minutes.")
 def party():
 # Main game loop
-def play_game():
-    introduction()
+ def play_game():
+        introduction()
 
     # Start of the adventure
     wake_up()
