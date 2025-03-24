@@ -87,11 +87,11 @@ def party():
         introduction()
 
     # Start of the adventure
-    wake_up()
-    breckky()
-    barry_island()
-    winter_wonderland()
-    presents()
+wake_up()
+breckky()
+barry_island()
+winter_wonderland()
+presents()
     
 if __name__ == "__main__":
     play_game()
