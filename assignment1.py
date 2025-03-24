@@ -49,13 +49,13 @@ def Breakfast():
 time.sleep(5)
 def mountain_climb():
     print(Fore.LIGHTMAGENTA_EX+"You wake up in front of a steep mountain.")
-    time.sleep(5)
+    time.sleep(1)
     choice = make_choice(Fore.LIGHTMAGENTA_EX+"what do you do?", ["Use a rope", "Climb without equipment."], [1, -1])
 
     if choice == 1:
         print(Fore.CYAN + "Smart. Using a rope makes it easier to climb")
     else:
-        print(Fore.BLUE + "No, you were supposed to use the rope! You slipped but Horimiya saved you, lucky you.")
+        print(Fore.BLUE + "No, you were supposed to use the rope! You slipped but Nikki saved you, lucky you.")
 time.sleep(2)
 def mystical_cave():
     print(Fore.LIGHTMAGENTA_EX + "After that adventure, i think you might enjoy resting in a magical cave.")
@@ -65,7 +65,7 @@ def mystical_cave():
     if choice == 1:
         print(Fore.CYAN + "Wow, you got the power of moving things with your mind")
     else:
-         print(Fore.BLUE + "Horimiya said you could have gotten powers. You turn back to face the cave but it disapeared, poor you.")
+         print(Fore.BLUE + "Nikki said you could have gotten powers. You turn back to face the cave but it disapeared, poor you.")
 
 def river_crossing():
     print(Fore.LIGHTMAGENTA_EX + "There is a wide, rushing river blocking your way")
@@ -75,7 +75,7 @@ def river_crossing():
     if choice == 1:
         print(Fore.CYAN + "You get there safely")
     else:
-         print(Fore.BLUE + "You somehow managed to survive with many injuries but Horimiya healed you.")
+         print(Fore.BLUE + "You somehow managed to survive with many injuries but Nikki healed you.")
 
 def hidden_treasure():
     print(Fore.LIGHTMAGENTA_EX + "Finally, you reach a massive treasure box")
@@ -85,7 +85,9 @@ def hidden_treasure():
     if choice == 1:
         print(Fore.CYAN + "The treasere you found was trilions of pounds, you take them home with you happily and save it")
     else:
-         print(Fore.BLUE + "Horimiya said the treasure was in there. You turn to get it but some theifs stole it.You didn't care and made your way back home.")
+         print(Fore.BLUE + "Nikki said the treasure was in there. You turn to get it but some theifs stole it.You didn't care and made your way back home.")
+    print(Fore.BLUE + "Nikki gives you a crown and says'Your Majesty'.")
+
 # Main game loop
 def play_game():
     introduction()
